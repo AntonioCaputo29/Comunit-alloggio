@@ -1,3 +1,9 @@
 body{
   background-color: #D6F4F4;
 }
+
+.poster{
+  margin-top: -180px;
+  margin-left: 30px;
+  width: 50%;
+}
