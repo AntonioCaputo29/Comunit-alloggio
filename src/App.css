@@ -60,6 +60,32 @@ body{
   font-style: italic;
 }
 
+h4,p, .newsletter{
+  color: rgba(0, 10, 192, 0.955);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.newsletter-input{
+  color: rgba(0, 10, 192, 0.955);
+  font-weight: bold;
+  font-style: italic;
+ background-color:  #D6F4F4;
+ border-color: rgba(0, 10, 192, 0.955);
+}
+
+
+.newsletter-input::placeholder, hr {
+  color: rgba(0, 10, 192, 0.955);
+}
+
+
+.newsletter-input:focus {
+  background-color:  #D6F4F4; /* Colore di sfondo quando si clicca sopra */
+  border: none;
+  color: rgba(0, 10, 192, 0.955);
+}
+
 
 .info-card2.text-center .card-body {
   text-align: center;

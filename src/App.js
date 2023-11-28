@@ -4,7 +4,7 @@ import CustomNavbar from "./components/Navbar";
 import Contenuto from "./components/Contenuto";
 import Informazioni from "./components/Informazioni";
 import Presentazione from "./components/Presentazione";
-import Notizie from "./components/Notizie";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Presentazione />
       <Contenuto />
       <Informazioni />
-      
+      <Footer />
     </div>
   );
 }
