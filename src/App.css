@@ -60,11 +60,22 @@ body{
   font-style: italic;
 }
 
-h4,p, .newsletter{
+h4,h3,h2,p,li, .newsletter{
   color: rgba(0, 10, 192, 0.955);
   font-weight: bold;
   font-style: italic;
 }
+
+.alert-custom {
+  color: rgba(0, 10, 192, 0.955);
+  font-weight: bold;
+  font-style: italic;
+  /* Altri stili opzionali che puoi modificare */
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
 
 .newsletter-input{
   color: rgba(0, 10, 192, 0.955);
@@ -86,6 +97,9 @@ h4,p, .newsletter{
   color: rgba(0, 10, 192, 0.955);
 }
 
+.py-5{
+  margin-top: 20px;
+}
 
 .info-card2.text-center .card-body {
   text-align: center;
@@ -118,6 +132,88 @@ h4,p, .newsletter{
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.notizie-container {
+  width: 300px; /* Larghezza della finestra */
+  height: 400px; /* Altezza della finestra */
+  
+  border: 1px solid transparent; /* Aggiungi bordo */
+  border-radius: 8px; /* Bordi arrotondati */
+  padding: 10px; /* Spaziatura interna */
+  margin-left: 40px;
+  background-image: url(/src/assets/img/news.png);
+  background-size: 585px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.notizia-card {
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notizia-card h3 {
+  margin-bottom: 5px;
+}
+
+.notizia-card p {
+  margin-bottom: 0;
+}
+
+.containerequipe {
+  display: flex;
+  margin-left: 30px;
+}
+
+.notizie-container {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.team-section {
+  flex: 0.8; /* Cambia la larghezza come preferisci */
+  margin-top: 65px;
+  background-image: url(/src/assets/img/equipe.png);
+  background-size: 385px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: -70px;
+}
+
+.notizie-scrollable {
+  height: 400px; /* Altezza della finestra scrollabile */
+  overflow-y: auto; /* Abilita la scrollbar se necessario */
+}
+
+/* Stile della scrollbar per Webkit (Chrome, Safari) */
+.notizie-scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.notizie-scrollable::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 4px;
+}
+
+
+/* Stile della scrollbar per Webkit (Chrome, Safari) */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 4px;
+}
+
+
+
+
+
 
 
 

@@ -1,25 +1,34 @@
-import React from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
 
-
 function Footer() {
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    setShowAlert(true);
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 3000);
+  };
+
   return (
     <footer className="py-5">
-        <hr />
+      <hr />
       <Container>
         <Row>
           <Col md={6}>
             <h4>Contattaci</h4>
             <p>
-              <FiPhone /> +1 123 456 7890
+              <FiPhone /> 0000/123456
             </p>
             <p>
-              <FiMail /> info@example.com
+              <FiMail /> info@comunitàlavita.com
             </p>
             <hr />
             <p>
-              <FiMapPin /> Via Antonio Caputo 15, Roma, 00145
+              <FiMapPin /> Via Antonio Caputo 15, Roma, 00127
             </p>
           </Col>
           <Col md={6}>
@@ -27,7 +36,7 @@ function Footer() {
             <p>
               Ricevi aggiornamenti sulle nostre attività iscrivendoti alla nostra newsletter.
             </p>
-            <Form>
+            <Form onSubmit={handleSubscribe}>
               <Form.Group controlId="formBasicEmail">
                 <Form.Label className="newsletter">Email</Form.Label>
                 <Form.Control className="newsletter-input" type="email" placeholder="Inserisci la tua email" />
@@ -37,6 +46,11 @@ function Footer() {
                 Iscriviti
               </Button>
             </Form>
+            {showAlert && (
+              <Alert variant="custom" className="mt-3 alert-custom" onClose={() => setShowAlert(false)} dismissible>
+              Iscrizione effettuata con successo!
+            </Alert>
+            )}
           </Col>
         </Row>
       </Container>

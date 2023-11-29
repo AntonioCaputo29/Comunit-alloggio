@@ -5,6 +5,7 @@ import Contenuto from "./components/Contenuto";
 import Informazioni from "./components/Informazioni";
 import Presentazione from "./components/Presentazione";
 import Footer from "./components/Footer";
+import Notizie from "./components/Notizie";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Presentazione />
       <Contenuto />
       <Informazioni />
+      <Notizie />
       <Footer />
     </div>
   );
