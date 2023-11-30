@@ -42,7 +42,7 @@ function Footer() {
                 <Form.Control className="newsletter-input" type="email" placeholder="Inserisci la tua email" />
               </Form.Group>
               <br />
-              <Button type="submit">
+              <Button className="custom-button" type="submit">
                 Iscriviti
               </Button>
             </Form>

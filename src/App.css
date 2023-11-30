@@ -213,6 +213,28 @@ body::-webkit-scrollbar-thumb {
   border-radius: 4px;
 }
 
+.custom-button {
+  color: #D6F4F4 !important;
+  background-color: rgba(0, 10, 192, 0.955);
+  font-weight: bold;
+  font-style: italic;
+  border-color:  rgba(0, 10, 192, 0.955);
+}
+
+
+.custom-button:hover {
+  color: #D6F4F4 !important;
+  background-color: rgba(0, 10, 192, 0.955);
+}
+
+
+.custom-button:active {
+  color: #D6F4F4 !important;
+  background-color: rgba(0, 10, 192, 0.955);
+}
+
+
+
 
 @media screen and (max-width: 767px) {
 
