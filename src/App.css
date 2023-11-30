@@ -1,29 +1,28 @@
-body{
+body {
   background-color: #D6F4F4;
 }
-
 
 .custom-image {
   width: 200px;
   height: 150px;
-  transition: transform 0.8s ease;
-  margin: 15px; 
+  transition: transform 0.3s ease;
+  margin: 15px;
 }
 
-
 .custom-image.above {
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
+
 }
 
 
 .custom-image.center {
-  margin-top: 50px; 
-  margin-bottom: 50px; 
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 
 .custom-image.below {
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 
 
@@ -36,8 +35,10 @@ body{
 }
 
 
-.info-card1 ,.info-card2, .info-card3 {
-  margin-bottom: 20px; 
+.info-card1,
+.info-card2,
+.info-card3 {
+  margin-bottom: 20px;
   margin-top: 20px;
   border: none;
   background-color: transparent;
@@ -46,12 +47,12 @@ body{
   font-style: italic;
 }
 
-.presentazione-card{
-  margin-bottom: 20px; 
+.presentazione-card {
+  margin-bottom: 20px;
   margin-top: -30px;
   border: none;
   background-color: transparent;
-  background-image:url(/src/assets/img/chisiamo.jpg);
+  background-image: url(/src/assets/img/chisiamo.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -60,7 +61,12 @@ body{
   font-style: italic;
 }
 
-h4,h3,h2,p,li, .newsletter{
+h4,
+h3,
+h2,
+p,
+li,
+.newsletter {
   color: rgba(0, 10, 192, 0.955);
   font-weight: bold;
   font-style: italic;
@@ -70,34 +76,34 @@ h4,h3,h2,p,li, .newsletter{
   color: rgba(0, 10, 192, 0.955);
   font-weight: bold;
   font-style: italic;
-  /* Altri stili opzionali che puoi modificare */
   padding: 15px;
   border-radius: 5px;
   margin-bottom: 20px;
 }
 
 
-.newsletter-input{
+.newsletter-input {
   color: rgba(0, 10, 192, 0.955);
   font-weight: bold;
   font-style: italic;
- background-color:  #D6F4F4;
- border-color: rgba(0, 10, 192, 0.955);
+  background-color: #D6F4F4;
+  border-color: rgba(0, 10, 192, 0.955);
 }
 
 
-.newsletter-input::placeholder, hr {
+.newsletter-input::placeholder,
+hr {
   color: rgba(0, 10, 192, 0.955);
 }
 
 
 .newsletter-input:focus {
-  background-color:  #D6F4F4; /* Colore di sfondo quando si clicca sopra */
+  background-color: #D6F4F4;
   border: none;
   color: rgba(0, 10, 192, 0.955);
 }
 
-.py-5{
+.py-5 {
   margin-top: 20px;
 }
 
@@ -105,41 +111,41 @@ h4,h3,h2,p,li, .newsletter{
   text-align: center;
 }
 
-.info-card1{
+.info-card1 {
   width: 500px;
-  background-image:url(/src/assets/img/Assistenza.png);
+  background-image: url(/src/assets/img/Assistenza.png);
   background-size: 250px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.info-card2{
+.info-card2 {
   width: 500px;
   margin-left: -80px;
-  background-image:url(/src/assets/img/socializzazione.png) ;
+  background-image: url(/src/assets/img/socializzazione.png);
   background-size: 300px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.info-card3{
-  width:500px;
+.info-card3 {
+  width: 500px;
   margin-left: -80px;
   height: 305px;
   text-align: right;
-  background-image:url(/src/assets/img/cura.png) ;
+  background-image: url(/src/assets/img/cura.png);
   background-size: 285px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .notizie-container {
-  width: 300px; /* Larghezza della finestra */
-  height: 400px; /* Altezza della finestra */
-  
-  border: 1px solid transparent; /* Aggiungi bordo */
-  border-radius: 8px; /* Bordi arrotondati */
-  padding: 10px; /* Spaziatura interna */
+  width: 300px;
+  height: 400px;
+
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 10px;
   margin-left: 40px;
   background-image: url(/src/assets/img/news.png);
   background-size: 585px;
@@ -175,7 +181,7 @@ h4,h3,h2,p,li, .newsletter{
 }
 
 .team-section {
-  flex: 0.8; /* Cambia la larghezza come preferisci */
+  flex: 0.8;
   margin-top: 65px;
   background-image: url(/src/assets/img/equipe.png);
   background-size: 385px;
@@ -185,11 +191,10 @@ h4,h3,h2,p,li, .newsletter{
 }
 
 .notizie-scrollable {
-  height: 400px; /* Altezza della finestra scrollabile */
-  overflow-y: auto; /* Abilita la scrollbar se necessario */
+  height: 400px;
+  overflow-y: auto;
 }
 
-/* Stile della scrollbar per Webkit (Chrome, Safari) */
 .notizie-scrollable::-webkit-scrollbar {
   width: 8px;
 }
@@ -199,8 +204,6 @@ h4,h3,h2,p,li, .newsletter{
   border-radius: 4px;
 }
 
-
-/* Stile della scrollbar per Webkit (Chrome, Safari) */
 body::-webkit-scrollbar {
   width: 8px;
 }
@@ -211,10 +214,60 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+@media screen and (max-width: 767px) {
+
+  .above,
+  .center,
+  .below {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .custom-image {
+    width: 100%;
+
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+  }
+}
 
 
+@media screen and (max-width: 767px) {
+
+  .info-card1,
+  .info-card2,
+  .info-card3 {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .info-card2,
+  .info-card3 {
+    margin-left: auto;
+  }
 
 
+}
 
 
+@media screen and (max-width: 767px) {
+  .presentazione-card {
+    margin-top: 10px;
+  }
 
+  .notizie-container {
+    margin-left: -20px;
+    background-size: 400px;
+  }
+
+  .containerequipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-section {
+    margin-top: 30px;
+  }
+}

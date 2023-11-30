@@ -7,7 +7,6 @@ function Informazioni() {
     <Container>
       <Row className="justify-content-center">
         <Col xs={12} md={4}>
-          {/* Prima card */}
           <Card className="info-card1">
             <Card.Body>
               <Card.Title>Assistenza personalizzata</Card.Title>
@@ -17,12 +16,11 @@ Per ogni residente viene definito un progetto di vita e di cura personalizzato, 
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} md={4} className="d-none d-md-block"> {/* Nasconde la colonna su schermi XS */}
-          {/* Spazio vuoto per allineamento */}
+        <Col xs={12} md={4} className="d-none d-md-block"> 
         </Col>
         <Col xs={12} md={4} className="order-md-last">
-          {/* Seconda card */}
-          <Card className="info-card2 text-center"> {/* Allinea il testo a destra */}
+          
+          <Card className="info-card2 text-center"> 
             <Card.Body>
               <Card.Title>Attività di socializzazione</Card.Title>
               <Card.Text>La nostra comunità mette a disposizione spazi accoglienti ed eleganti per riunirvi, socializzare, godervi un momento di relax e ricevere i vostri cari.
@@ -36,7 +34,6 @@ Un ampio giardino riservato affacciato sul lago di bolsena che offre un luogo pr
           </Card>
         </Col>
         <Col xs={12} md={4}>
-          {/* Terza card */}
           <Card className="info-card3">
             <Card.Body>
               <Card.Title>Cura della Persona</Card.Title>
